@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* TOP BAR */
+.top-bar {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.title {
+  margin: 0;
+}
+
+/* CONTAINER */
+.container {
+  margin: 10px auto;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+}
+
+h1, h3, h4 {
+  margin: 0;
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+  margin: 20px 0 10px;
+}
+
+/* CARD */
+.inc-exp-container {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container > div:first-child {
+  border-right: 1px solid #ddd;
+}
+
+.money-plus {
+  color: green;
+}
+
+.money-minus {
+  color: red;
+}
+
+/* INPUT */
+.form-control {
+  margin: 10px 0;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+/* BUTTON */
+.btn {
+  cursor: pointer;
+  background-color: #6c5ce7;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* SMALL BUTTON */
+.small-btn {
+  width: auto;
+  padding: 6px 10px;
+}
+
+/* LIST */
+.list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.list li {
+  background: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+}
+
+/* FIXED CLEAR HISTORY BUTTON 🔥 */
+.clear-history-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: auto;
+  padding: 12px 16px;
+  background-color: red;
+  border-radius: 50px;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* HOVER EFFECT */
+.clear-history-btn:hover {
+  transform: scale(1.1);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 500px) {
+  .container {
+    padding: 10px;
+  }
+
+  .clear-history-btn {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
